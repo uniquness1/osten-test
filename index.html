@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco-Friendly Cooking Event | Osten</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="logo-container">
+        <img
+          class="logo"
+          src="./images/Osten-Logo-PNG.png"
+          alt="osten lab logo"
+        />
+      </div>
+      <div class="event">
+        <p class="event-title">Eco-Friendly cooking Event</p>
+        <div class="event-details">
+          <p>Muri Okunola Park</p>
+          <p>20th July 2024</p>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Osten's Eco-Friendly Cooking Event</h1>
+        <p>
+          Join us in promoting eco-friendly cooking practices by switching to
+          cooking gas. Together, let's make a difference!
+        </p>
+        <button id="scrollToForm">Register Now</button>
+      </div>
+    </section>
+    <section class="benefits-section">
+      <h2>Why Cooking Gas?</h2>
+      <div class="benefits">
+        <div class="benefit">
+          <i class="fas fa-cloud"></i>
+          <h3>Cleaner Air</h3>
+          <p>
+            Cooking with gas produces less smoke and indoor air pollution
+            compared to firewood.
+          </p>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-fire"></i>
+          <h3>Efficiency</h3>
+          <p>
+            Gas stoves heat up quickly and provide consistent heat, making
+            cooking more efficient.
+          </p>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-money-bill-wave"></i>
+          <h3>Cost-Effective</h3>
+          <p>
+            Gas is generally more cost-effective in the long run compared to
+            using firewood or electric stoves.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <h2>Ready to Go Green?</h2>
+      <p>
+        Register now to participate in the event by filling in your details
+        below.
+      </p>
+      <form class="registration-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <button type="submit" onclick="registerUser(event)">Register</button>
+      </form>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <div>
+          <h3>Looking for a First-Class Scientific Partner?</h3>
+          <a target="_blank" href="https://ostenlaboratory.com/contact"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+      <div class="footer-section">
+        <p>&copy; 2024, Osten Laboratory. All Rights Reserved</p>
+        <span>
+          <i class="fas envelope"></i>
+          <a href="mailto:inquiries@ostenlaboratory.com"
+            >inquiries@ostenlaboratory.com</a
+          >
+        </span>
+      </div>
+    </footer>
+
+    <div class="popup" id="registrationPopup">
+      <div class="popup-content">
+        <span class="close-popup" onclick="closePopup()">&times;</span>
+        <h2>Registration Successful!</h2>
+        <p>Thank you for registering. Your details have been saved.</p>
+        <div id="userDetails"></div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
